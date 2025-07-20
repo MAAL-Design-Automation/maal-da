@@ -1,5 +1,6 @@
 # Rust
 /target/          # Build outputs and binaries
+target/
 **/*.rs.bk       # Backup files
 
 # Cargo (keep Cargo.lock for applications, ignore for libraries)
