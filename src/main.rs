@@ -44,10 +44,10 @@ fn toggle_theme(cookies: &CookieJar<'_>) -> Redirect {
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-        // add templating system
-        .attach(Template::fairing())
-        // serve content from disk
-        .mount("/public", FileServer::new(relative!("/public"), Options::Missing | Options::NormalizeDirs))
+	// add templating system
+	.attach(Template::fairing())
+	 // serve content from disk
+	.mount("/public", FileServer::new(relative!("/public"), Options::Missing | Options::NormalizeDirs))
         // register routes
         .mount("/", routes![index, toggle_theme])
 }
