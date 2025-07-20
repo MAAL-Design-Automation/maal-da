@@ -1,0 +1,30 @@
+# Rust
+/target/          # Build outputs and binaries
+**/*.rs.bk       # Backup files
+
+# Cargo (keep Cargo.lock for applications, ignore for libraries)
+# Cargo.lock      # Uncomment if this is a library (not an executable)
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.swp
+*~
+\#*#
+.\#*
+
+# Emacs temporary/backup files
+*~
+\#*\#
+.\#*
+*autosave
+*.elc       ; Compiled Elisp (if any)
+TAGS        ; etags-generated file
+
+# Rust Rocket (if applicable)
+.env
+.env.local
