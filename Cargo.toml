@@ -2,5 +2,12 @@
 name = "maal-da"
 version = "0.1.0"
 edition = "2024"
+authors = ["Mohammad Ahmad ALhamd <maal.designautomation@gmail.com>"]
 
 [dependencies]
+rocket = "0.5.0"
+rocket_dyn_templates = { version = "0.1.0", features = ["handlebars", "tera"] }
+shuttle-rocket = "0.56.0"
+shuttle-runtime = "0.56.0"
+tokio = "1.26.0"
+pulldown-cmark = "0.10"
